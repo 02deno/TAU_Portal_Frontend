@@ -25,6 +25,11 @@ class HomeActivity : AppCompatActivity() {
         val adapter = ItemListAdapter(MockList.getMockedItemList() as ArrayList<LessonModel>)
         recyclerView.adapter= adapter
 
+        val recyclerView2 = findViewById<RecyclerView>(R.id.recyclerView4)
+        recyclerView2.layoutManager = GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false)
+        val adapter2 = AnnListAdapter(MockAnnList.getMockedItemList() as ArrayList<AnnModel>)
+        recyclerView2.adapter= adapter2
+
 
 
 

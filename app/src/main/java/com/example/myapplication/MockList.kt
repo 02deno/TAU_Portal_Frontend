@@ -12,9 +12,16 @@ object MockList {
             "ED-9",
             "Emre Işık")
 
+        val lessonModel3 = LessonModel("Gömülü Sistemler",
+            "17.30-19.00",
+            "ED-13",
+            "Faruk Bağcı")
+
+
         val lessonList: ArrayList<LessonModel> = ArrayList()
         lessonList.add(lessonModel1)
         lessonList.add(lessonModel2)
+        lessonList.add(lessonModel3)
         return lessonList
 
     }
