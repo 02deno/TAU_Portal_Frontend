@@ -1,6 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bus_background"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/bus_times"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="95dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Bus Departure Time"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TableLayout
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true">
+
+
+
+        <TableRow android:background="@color/tau_blue"
+            android:paddingLeft= "20dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kavacık"
+                android:textSize = "18dp"
+                android:layout_span="2"
+                android:textColor = "@color/tau_black"
+                android:fontFamily="sans-serif-black"/>
+
+
+        </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:00 T"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:20 "
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:12 M"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:40 "
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:39 H"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:10"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:50"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:50"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:30"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:45 "
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:10"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:55"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:50"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:15"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:30"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:20"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:55"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:25"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:20"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17:30"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="230dp"
+        android:layout_marginLeft="240dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true">
+
+
+
+        <TableRow android:background="@color/tau_blue"
+            android:paddingLeft= "20dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:fontFamily="sans-serif-black"
+                android:text="TAU"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/tau_black"
+                android:textSize="18dp" />
+
+
+        </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:00 "
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:35"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:15"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:50"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:25"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:10"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:50"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:30"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00H"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:50 "
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:30"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:15"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:15"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:30"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:35"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:50"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding= "5dp"
+            android:layout_marginLeft="20dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:50"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:40"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="10dp"
+                />
+
+            </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

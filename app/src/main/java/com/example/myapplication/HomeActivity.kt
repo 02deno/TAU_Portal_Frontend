@@ -47,7 +47,7 @@ class HomeActivity : AppCompatActivity() {
             when(it.itemId) {
 
                 R.id.nav_home -> Toast.makeText(applicationContext,"Clicked Home",Toast.LENGTH_SHORT).show()
-                R.id.nav_bus -> Toast.makeText(applicationContext,"Clicked Bus",Toast.LENGTH_SHORT).show()
+                // R.id.nav_bus -> Toast.makeText(applicationContext,"Clicked Bus",Toast.LENGTH_SHORT).show()
                 R.id.nav_bus -> startActivity(Intent(this, BusActivity::class.java))
                 R.id.nav_food -> Toast.makeText(applicationContext,"Clicked Cafeteria",Toast.LENGTH_SHORT).show()
 
